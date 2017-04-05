@@ -39,22 +39,22 @@ public class DiceRoll{
 		label.setIcon(new ImageIcon(oneImg));
 		
 		rollButton.addActionListener((e)->{
+			Random dagi = new Random();
 			
-			
-			int randomChoice = 0;
+			int randomChoice = dagi.nextInt(6);
 			
 			
 			if(randomChoice == 0){
 				label.setIcon(new ImageIcon(oneImg));
-			}else if(randomChoice == 0){
+			}else if(randomChoice == 2){
 				label.setIcon(new ImageIcon(twoImg));
-			}else if(randomChoice == 0){
+			}else if(randomChoice == 4){
 				label.setIcon(new ImageIcon(threeImg));
 			}
-			else if(randomChoice == 0){
+			else if(randomChoice == 3){
 				label.setIcon(new ImageIcon(fourImg));
 			}
-			else if(randomChoice == 0){
+			else if(randomChoice == 1){
 				label.setIcon(new ImageIcon(fiveImg));
 			}
 			else{
